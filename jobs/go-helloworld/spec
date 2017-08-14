@@ -1,0 +1,9 @@
+---
+name: go-helloworld
+
+templates:
+    ctl: bin/ctl
+
+packages: []
+
+properties: {}

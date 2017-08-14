@@ -1,0 +1,5 @@
+check process go-helloworld
+  with pidfile /var/vcap/sys/run/bosh-helloworld/pid
+  start program "/var/vcap/jobs/go-helloworld/bin/ctl start"
+  stop program "/var/vcap/jobs/go-helloworld/bin/ctl stop"
+  group vcap
