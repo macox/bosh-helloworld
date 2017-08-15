@@ -1,7 +1,7 @@
-name: bosh-helloworld
+name: go-helloworld
 blobstore:
     provider: s3
     options:
         host: storage.googleapis.com
         port: 443    
-        bucket_name: seventh-market-3442
+        bucket_name: bosh-blobs
