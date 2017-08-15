@@ -2,8 +2,10 @@
 name: go-helloworld
 
 templates:
-    ctl: bin/ctl
+    bin/ctl.sh: bin/ctl.sh
 
-packages: []
+packages:
+    - golang
+    - go-helloworld
 
 properties: {}
