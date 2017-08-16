@@ -1,0 +1,3 @@
+[submodule "src/github.com/macox/go-playground"]
+	path = src/github.com/macox/go-playground
+	url = https://github.com/macox/go-playground

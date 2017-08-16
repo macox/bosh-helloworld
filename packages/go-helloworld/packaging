@@ -4,7 +4,7 @@ set -e
 
 APP_NAME=go-helloworld
 
-REPO_NAME=github.com/macox/go-playground/tree/master/${APP_NAME}
+REPO_NAME=github.com/macox/go-playground/helloworld
 
 export GOROOT=$(readlink -nf /var/vcap/packages/golang)
 export GOPATH=${BOSH_INSTALL_TARGET}
@@ -13,4 +13,4 @@ export PATH=$GOROOT/bin:$PATH
 mkdir ${GOPATH}/src
 cp -a * ${GOPATH}/src
 
-go build -o ${GOPATH}/bin/${APP_NAME} main.go
+go build -o ${GOPATH}/bin/${APP_NAME} ${REPO_NAME}/main.go
