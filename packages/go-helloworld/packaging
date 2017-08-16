@@ -2,7 +2,7 @@
 
 set -e
 
-APP_NAME=helloworld
+APP_NAME=go-helloworld
 
 REPO_NAME=github.com/macox/go-playground/tree/master/${APP_NAME}
 
@@ -13,4 +13,4 @@ export PATH=$GOROOT/bin:$PATH
 mkdir ${GOPATH}/src
 cp -a * ${GOPATH}/src
 
-go build -o ${GOPATH}/bin/${APP_NAME} ${REPO_NAME}/main.go
+go build -o ${GOPATH}/bin/${APP_NAME} main.go

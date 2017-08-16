@@ -1,7 +1,7 @@
 #!/bin/bash
 
-APP_DIR=/var/vcap/sys/run/bosh-helloworld
-LOG_DIR=/var/vcap/sys/log/bosh-helloworld
+APP_DIR=/var/vcap/sys/run/go-helloworld
+LOG_DIR=/var/vcap/sys/log/go-helloworld
 PIDFILE=${APP_DIR}/pid
 RUN_USER=vcap
 
@@ -16,8 +16,8 @@ case $1 in
         cd /var/vcap/packages/go-helloworld
 
         exec /var/vcap/packages/go-helloworld/bin/go-helloworld \
-             >>  $LOG_DIR/bosh_hello_world-go_helloworld.stdout.log \
-             2>> $LOG_DIR/bosh_hello_world-go_helloworld.stderr.log
+             >>  $LOG_DIR/go_helloworld.stdout.log \
+             2>> $LOG_DIR/go_helloworld.stderr.log
 
         ;;
 

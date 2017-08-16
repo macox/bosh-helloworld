@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+    "net/http"
+    "fmt"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    if r.URL.Path == "/ping" {
+        fmt.Fprintf(w, "OK")
+    }
+}
+
 
 func main() {
-    fmt.Println("hello world")
+    http.HandleFunc("/ping", handler)
+    http.ListenAndServe(":8080", nil)
 }

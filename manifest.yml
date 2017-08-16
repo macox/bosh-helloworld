@@ -1,8 +1,8 @@
 ---
-name: bosh-helloworld
+name: go-helloworld
 
 releases:
-- name: bosh-helloworld
+- name: go-helloworld
   version: latest
 
 stemcells:
@@ -17,13 +17,13 @@ update:
   update_watch_time: 1000-30000
 
 instance_groups:
-- name: bosh-helloworld
+- name: go-helloworld
   azs:
   - z1
   instances: 1
   jobs:
   - name: go-helloworld
-    release: bosh-helloworld
+    release: go-helloworld
     properties: {}
   vm_type: g1-small
   stemcell: default

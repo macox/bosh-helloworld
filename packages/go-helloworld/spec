@@ -5,4 +5,4 @@ dependencies:
   - golang
 
 files:
-  - github.com/macox/go-playground/tree/master/helloworld/main.go
+  - main.go
