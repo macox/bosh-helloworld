@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+APP_NAME=go-gorilla
+
+REPO_NAME=github.com/macox/go-playground/gorilla-mux
+
+export GOROOT=$(readlink -nf /var/vcap/packages/golang)
+export GOPATH=${BOSH_INSTALL_TARGET}
+export PATH=$GOROOT/bin:$PATH
+
+mkdir ${GOPATH}/src
+cp -a * ${GOPATH}/src
+
+go build -o ${GOPATH}/bin/${APP_NAME} ${REPO_NAME}/main.go

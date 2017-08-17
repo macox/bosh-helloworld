@@ -1,0 +1,9 @@
+---
+name: go-gorilla
+
+dependencies:
+  - golang
+
+files:
+  - github.com/macox/go-playground/gorilla-mux/*
+  - github.com/gorilla/mux/*

@@ -1,0 +1,5 @@
+check process go-gorilla
+  with pidfile /var/vcap/sys/run/go-gorilla/pid
+  start program "/var/vcap/jobs/go-gorilla/bin/ctl.sh start"
+  stop program "/var/vcap/jobs/go-gorilla/bin/ctl.sh stop"
+  group vcap

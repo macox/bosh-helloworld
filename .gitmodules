@@ -1,3 +1,6 @@
 [submodule "src/github.com/macox/go-playground"]
 	path = src/github.com/macox/go-playground
 	url = https://github.com/macox/go-playground
+[submodule "src/github.com/gorilla/mux"]
+	path = src/github.com/gorilla/mux
+	url = https://github.com/gorilla/mux

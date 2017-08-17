@@ -31,3 +31,17 @@ instance_groups:
   - name: default
     static_ips:
     - 10.0.0.13
+- name: go-gorilla
+  azs:
+  - z1
+  instances: 1
+  jobs:
+  - name: go-gorilla
+    release: go-helloworld
+    properties: {}
+  vm_type: g1-small
+  stemcell: default
+  networks:
+  - name: default
+    static_ips:
+    - 10.0.0.14

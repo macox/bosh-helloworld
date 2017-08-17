@@ -1,0 +1,11 @@
+---
+name: go-gorilla
+
+templates:
+    bin/ctl.sh: bin/ctl.sh
+
+packages:
+    - golang
+    - go-gorilla
+
+properties: {}
